@@ -1,3 +1,1 @@
-# react-i7wdfp
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-i7wdfp)
+#https://daveceddia.com/react-redux-immutability-guide/#redux-update-an-object

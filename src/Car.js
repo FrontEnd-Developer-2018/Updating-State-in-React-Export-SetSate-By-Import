@@ -6,6 +6,7 @@ class Car extends React.Component {
         super();
         this.state = { vitesse: 10 };
         FaireSortirLeTHISsetStateOutDeComposent=this.setState
+        //Obligatoire pour que ça fonctionne
         FaireSortirLeTHISsetStateOutDeComposent = FaireSortirLeTHISsetStateOutDeComposent.bind(this);
     }
     render() {

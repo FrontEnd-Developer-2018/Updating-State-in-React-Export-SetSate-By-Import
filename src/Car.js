@@ -1,11 +1,12 @@
 import * as React from "react";
 
-export let ImpossibledeFaireSortirLeTHISsetStateOutDeComposent =null;
+export let FaireSortirLeTHISsetStateOutDeComposent =null;
 class Car extends React.Component {
     constructor() {
         super();
         this.state = { vitesse: 10 };
-        ImpossibledeFaireSortirLeTHISsetStateOutDeComposent=this.setState
+        FaireSortirLeTHISsetStateOutDeComposent=this.setState
+        FaireSortirLeTHISsetStateOutDeComposent = FaireSortirLeTHISsetStateOutDeComposent.bind(this);
     }
     render() {
         return (
@@ -14,8 +15,8 @@ class Car extends React.Component {
                     Changer de vitesse 
                   </button>  
 
-                   <button onClick={() => ImpossibledeFaireSortirLeTHISsetStateOutDeComposent({ vitesse: this.state.vitesse + 5 })}>
-                    Changer de vitesse par ImpossibledeFaireSortirLeTHISsetStateOutDeComposent
+                   <button onClick={() => FaireSortirLeTHISsetStateOutDeComposent({ vitesse: this.state.vitesse + 5 })}>
+                    Changer de vitesse par FaireSortirLeTHISsetStateOutDeComposent
                   </button>  
                 <h2>Vitesse: {this.state.vitesse} Car!</h2>
 

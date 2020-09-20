@@ -1,5 +1,5 @@
 import * as React from "react";
-import ImpossibledeFaireSortirLeTHISsetStateOutDeComposent from "./Car"
+import FaireSortirLeTHISsetStateOutDeComposent from "./Car"
 
 class TeleCommandCar extends React.Component {
     constructor() {
@@ -8,8 +8,8 @@ class TeleCommandCar extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={() =>ImpossibledeFaireSortirLeTHISsetStateOutDeComposent({ vitesse: 2 })}>
-                    Impossible Changer de vitesse de Car via TeleCommande
+                <button onClick={() =>FaireSortirLeTHISsetStateOutDeComposent({ vitesse: 2 })}>
+                    Changer de vitesse de Car via TeleCommande
                   </button>  
     
             </div>

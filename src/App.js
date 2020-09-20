@@ -24,7 +24,7 @@ export default class App extends React.Component {
                 <div style={{ marginTop: "10px", border: "1px solid" }}>
                     <Foobar ref={this.myRef} />
                     <button onClick={() => this.myRef.setState({ updateMe: "Fixed" })}>
-                        Now I Change Foobar outside component
+                        Other way to change state out of Component , Not yet find
                   </button>
                 </div>
             </div>

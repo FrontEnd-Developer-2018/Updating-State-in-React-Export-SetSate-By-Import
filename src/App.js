@@ -1,11 +1,33 @@
 import React from "react";
 import "./style.css";
+import Car from "./Car"
+import Foobar from "./Foobar"
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+import TeleCommandCar from "./TeleCommandCar"
+
+
+export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.myRef = React.createRef();
+    }
+
+
+    render() {
+        return (
+            <div>
+                <div>
+                    <Car />
+                    <TeleCommandCar />
+                </div>
+
+                <div style={{ marginTop: "10px", border: "1px solid" }}>
+                    <Foobar ref={this.myRef} />
+                    <button onClick={() => this.myRef.setState({ updateMe: "Fixed" })}>
+                        Now I Change Foobar outside component
+                  </button>
+                </div>
+            </div>
+        );
+    }
 }

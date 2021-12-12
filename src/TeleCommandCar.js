@@ -1,11 +1,12 @@
 import * as React from 'react';
-import FaireSortirLeTHISsetStateOutDeComposent from './Car';
+import {FaireSortirLeTHISsetStateOutDeComposent} from './Car';
 
 class TeleCommandCar extends React.Component {
   constructor() {
     super();
   }
   render() {
+    console.log(FaireSortirLeTHISsetStateOutDeComposent);
     return (
       <div>
         {this.props.onChange && (

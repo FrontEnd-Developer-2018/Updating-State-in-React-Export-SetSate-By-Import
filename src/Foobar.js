@@ -11,7 +11,7 @@ class Foobar extends React.Component {
     render() {
         return (
             <div>
-                <h2>Foobar-value=> {this.state.updateMe}</h2>
+                <h2>Foobar-value={this.state.updateMe}</h2>
             </div>
 
         );

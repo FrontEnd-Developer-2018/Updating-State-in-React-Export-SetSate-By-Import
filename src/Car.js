@@ -38,7 +38,7 @@ class Car extends React.Component {
         </button>
         <h2>Vitesse: {this.state.vitesse} Car!</h2>
 
-        <TeleCommandCar onChange={this.onChange} />
+        <TeleCommandCar onChange={this.onChange} vitesse={this.state.vitesse} />
       </div>
     );
   }
